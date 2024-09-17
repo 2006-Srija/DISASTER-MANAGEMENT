@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Assistance</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #e9ecef;
+            color: #212529;
+            padding: 2rem;
+        }
+
+        h1 {
+            color: #343a40;
+            font-size: 2rem;
+            border-bottom: 3px solid #ffc107;
+            padding-bottom: 0.5rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            list-style: disc inside;
+            margin-top: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Link Styles */
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Back Button Styles */
+        .back-btn {
+            background-color: #28a745;
+            color: #fff;
+            padding: 0.8rem 1.2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 1.5rem;
+        }
+
+        .back-btn:hover {
+            background-color: #218838;
+        }
+
+        /* Emergency Contact Styles */
+        strong {
+            color: #dc3545;
+        }
+
+        /* Fade-in Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <h1>Medical Assistance During Disaster</h1>
+    <p class="fade-in">During a disaster, it's essential to know where and how to seek medical assistance. Here are a few key steps you can follow:</p>
+
+    <h2>Steps to Get Medical Help</h2>
+    <ul>
+        <li>Contact your nearest medical facility for immediate help.</li>
+        <li>Dial emergency services (Ambulance: 102 in India).</li>
+        <li>Identify nearby hospitals equipped to handle disaster-related injuries.</li>
+        <li>Follow guidelines provided by local authorities.</li>
+    </ul>
+
+    <h2>Emergency Contacts</h2>
+    <p>Here are some emergency numbers you may need:</p>
+    <ul>
+        <li>Emergency Ambulance: <strong>102</strong></li>
+        <li>Police: <strong>100</strong></li>
+        <li>Fire: <strong>101</strong></li>
+    </ul>
+
+    <h2>Nearby Hospitals</h2>
+    <p>If you need medical help, visit one of these hospitals in the Kolkata area:</p>
+    <ul>
+        <li>Apollo Gleneagles Hospital</li>
+        <li>AMRI Hospital</li>
+        <li>Fortis Hospital</li>
+        <li>Narayana Superspeciality Hospital</li>
+        <li>Columbia Asia Hospital</li>
+    </ul>
+
+    <a href="index.html" class="back-btn">Back to Disaster Management</a>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Add fade-in effect to the main content
+            const mainContent = document.querySelector('p.fade-in');
+            mainContent.style.opacity = '0';
+
+            // Delay the fade-in effect for smoother UI
+            setTimeout(() => {
+                mainContent.style.opacity = '1';
+            }, 500);
+
+            // Back button functionality
+            document.querySelector('.back-btn').addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent default anchor behavior
+                window.location.href = 'srija.html'; // Redirect back to srija.html
+            });
+        });
+    </script>
+</body>
+</html>
